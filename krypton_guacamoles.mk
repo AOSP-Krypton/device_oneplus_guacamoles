@@ -8,21 +8,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from guacamole device
-$(call inherit-product, device/oneplus/guacamole/device.mk)
+# Inherit from guacamoles device
+$(call inherit-product, device/oneplus/guacamoles/device.mk)
 
 # Inherit some common krypton stuff.
 $(call inherit-product, vendor/krypton/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := krypton_guacamole
-PRODUCT_DEVICE := guacamole
+PRODUCT_NAME := krypton_guacamoles
+PRODUCT_DEVICE := guacamoles
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := OnePlus 7 Pro
+PRODUCT_MODEL := GM1920
 PRODUCT_MANUFACTURER := OnePlus
 
-PRODUCT_SYSTEM_NAME := OnePlus7Pro
-PRODUCT_SYSTEM_DEVICE := OnePlus7Pro
+PRODUCT_SYSTEM_NAME := OnePlus7ProNR
+PRODUCT_SYSTEM_DEVICE := OnePlus7ProNR
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
@@ -38,7 +38,7 @@ TARGET_SCREEN_WIDTH := 1440
 # Build info
 BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2202112154:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=OnePlus7Pro \
-    TARGET_PRODUCT=OnePlus7Pro
+    TARGET_DEVICE=OnePlus7ProNR \
+    TARGET_NAME=OnePlus7ProNR
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
