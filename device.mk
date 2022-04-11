@@ -34,4 +34,4 @@ OFFICIAL_BUILD := true
     
 # Wifi Overlay
 PRODUCT_PACKAGES += \
-    OnePlus7ProWifiOverlay
+    OnePlus7ProNRWifiOverlay
