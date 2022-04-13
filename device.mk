@@ -9,6 +9,9 @@ $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/guacamoles/guacamoles-vendor.mk)
 
+# Inherit Google Carrier Settings (for out of box 5g support).
+$(call inherit-product, ${LOCAL_PATH}/carriersettings.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
